@@ -5,14 +5,14 @@ public abstract class Embarcacion {
     private double precio_base;
     private static double valor_adicional;
     private int anoFabricacion;
-    private double long_metros;
+    private double eslora;
 
-    public Embarcacion(Capitan capitan, double precio_base, int anoFabricacion, double long_metros) {
+    public Embarcacion(Capitan capitan, double precio_base, int anoFabricacion, double eslora) {
         this.capitan = capitan;
         this.precio_base = precio_base;
         this.valor_adicional = 20000;
         this.anoFabricacion = anoFabricacion;
-        this.long_metros = long_metros;
+        this.eslora = eslora;
     }
 
     public Capitan getCapitan() {
@@ -27,8 +27,8 @@ public abstract class Embarcacion {
         return anoFabricacion;
     }
 
-    public double getLong_metros() {
-        return long_metros;
+    public double getEslora() {
+        return eslora;
     }
 
     public double calcularMontoAlquiler(){
@@ -37,6 +37,8 @@ public abstract class Embarcacion {
         }
         return precio_base;
     }
+
+    public abstract String evaluarEmbarcacion();
 
     public abstract String mostrarInfo();
 }

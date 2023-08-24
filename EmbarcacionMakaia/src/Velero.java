@@ -3,12 +3,13 @@ import java.time.LocalDate;
 public class Velero extends Embarcacion {
     private int cantidad_mastiles;
 
-    public Velero (Capitan capitan, double precio_base, int anoFabricacion, double long_metros, int cantidad_mastiles) {
-        super(capitan, precio_base, anoFabricacion, long_metros);
+    public Velero (Capitan capitan, double precio_base, int anoFabricacion, double eslora, int cantidad_mastiles) {
+        super(capitan, precio_base, anoFabricacion, eslora);
         this.cantidad_mastiles = cantidad_mastiles;
     }
 
-    public String evaluarVelero(){
+    @Override
+    public String evaluarEmbarcacion(){
         if(cantidad_mastiles > 4 ){
             return"velero grande";
         }else{
@@ -24,9 +25,9 @@ public class Velero extends Embarcacion {
                 " - precio base: " + getPrecio_base() +
                 " - monto alquiler: " + calcularMontoAlquiler() +
                 " - año fabricacion: " + getAnoFabricacion() +
-                " - logitud en metros: " + getLong_metros() +
+                " - logitud en metros: " + getEslora() +
                 " - cantidad mastiles: " + cantidad_mastiles +
-                " - descripcion: " + evaluarVelero()
+                " - descripcion: " + evaluarEmbarcacion()
         );
     }
 }

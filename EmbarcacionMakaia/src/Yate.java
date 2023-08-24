@@ -4,13 +4,14 @@ public class Yate extends Embarcacion {
     private int cantidad_camarotes;
     private String descripcion_yate;
 
-    public Yate(Capitan capitan, double precio_base, int anoFabricacion, double long_metros, int cantidad_camarotes) {
-        super(capitan, precio_base, anoFabricacion, long_metros);
+    public Yate(Capitan capitan, double precio_base, int anoFabricacion, double eslora, int cantidad_camarotes) {
+        super(capitan, precio_base, anoFabricacion, eslora);
         this.cantidad_camarotes = cantidad_camarotes;
-        this.descripcion_yate = evaluarYate();
+        this.descripcion_yate = evaluarEmbarcacion();
     }
 
-    public String evaluarYate(){
+    @Override
+    public String evaluarEmbarcacion(){
         if(cantidad_camarotes > 7 ){
             return"posible comprar";
         }else{
@@ -26,9 +27,9 @@ public class Yate extends Embarcacion {
                 " - precio base: " + getPrecio_base() +
                 " - monto alquiler: " + calcularMontoAlquiler() +
                 " - año fabricacion: " + getAnoFabricacion() +
-                " - logitud en metros: " + getLong_metros() +
+                " - logitud en metros: " + getEslora() +
                 " - cantidad mastiles: " + cantidad_camarotes +
-                " - descripcion: " + evaluarYate()
+                " - descripcion: " + evaluarEmbarcacion()
         );
     }
 }
