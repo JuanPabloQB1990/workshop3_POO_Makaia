@@ -4,7 +4,7 @@ Diagramas UML
 
 Embarcación Makaia
 
-[![embarcacion.jpg](https://i.postimg.cc/d1C843zS/embarcacion.jpg)](https://postimg.cc/BLqLvSZx)
+[![embarcacion.jpg](https://i.postimg.cc/8z9PpmFR/embarcacion.jpg)](https://postimg.cc/Bj5GNDBb)
 
 Parqueadero
 
