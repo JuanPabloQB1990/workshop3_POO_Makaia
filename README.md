@@ -8,5 +8,5 @@ Embarcación Makaia
 
 Parqueadero
 
-[![parqueadero.jpg](https://i.postimg.cc/9My7yS76/parqueadero.jpg)](https://postimg.cc/XG7qbsxL)
+[![parqueadero.jpg](https://i.postimg.cc/wT0TRdrQ/parqueadero.jpg)](https://postimg.cc/YhLwTTMv)
 
